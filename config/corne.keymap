@@ -41,15 +41,15 @@
 
                 base_layer {
 // ---------------------------------------------------------------------------------------------------------------
-//                                     |   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |   O  |  P  |  |
-//         |   |  META / A  |  CTRL / S  |  SHIFT / D  |  ALT / F  |  G  |   |  H  |  ALT / J  |  SHIFT / K  |   CTRL / L  |  META / ;  |  |
-//                                     |   |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |   .  |  /  |  |
-// | L2 / TAB | L1 / ENTER | SHIFT / SPACE |   | SHIFT / SPACE | L1 / BSPC  | ALT / DELETE |
+//                              |   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |   O  |  P  |  |
+//         |   |  A  |  CTRL / S  |  SHIFT / D  |  ALT / F  |  G  |   |  H  |  ALT / J  |  SHIFT / K  |   CTRL / L  |  ;  |  |
+//                              |   |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |   .  |  /  |  |
+//                                | L2 / TAB | L1 / ENTER | SPACE |   | SPACE | L1 / BSPC  | ALT / DELETE |
                         bindings = <
-                                      &none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I     &kp O   &kp P    &none
-           &none  &bhm LGUI A  &bhm LCTRL S  &bhm LSHIFT D  &bhm LALT F  &kp G    &kp H  &bhm RALT J  &bhm RSHIFT K &bhm RCTRL L &bhm RGUI SEMI &none
-                                      &none  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &none
-                                    &lt FUNCTION TAB &lt NUMBER ENTER &kp SPACE   &kp SPACE &lt NUMBER BSPC &lt FUNCTION DELETE
+                                &none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I     &kp O   &kp P    &none
+           &none  &kp A  &bhm LCTRL S  &bhm LSHIFT D  &bhm LALT F  &kp G    &kp H  &bhm RALT J  &bhm RSHIFT K &bhm RCTRL L &kp SEMI &none
+                                &none  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &none
+                              &lt FUNCTION TAB &lt NUMBER ENTER &kp SPACE   &kp SPACE &lt NUMBER BSPC &lt FUNCTION DELETE
                         >;
                 };
 
@@ -71,12 +71,12 @@
 // -----------------------------------------------------------------------------------------------
 // |  |  HOME  |   UP   |   END   |  PG_UP  | C_VOL_UP |   |  F1  |  F2  |  F3  |  F4  |  F5   |  |
 // |  |  LEFT  |  DOWN  |  RIGHT  |  PG_DN  | C_VOL_DN |   |  F6  |  F7  |  F8  |  F9  |  F10  |  |
-// |  |  ESC   |    '   |    "    |    `    |     ~    |   |  F11 |  F12 | CUT  | COPY | PASTE |  |
+// |  |  ESC   |    '   |    "    |    `    |     ~    |   |  F11 |  F12 |      | LGUI | RGUI  |  |
 //                                            |  |  |  |   |  |  |  |
                         bindings = <
    &none  &kp HOME  &kp UP    &kp END    &kp PG_UP  &kp C_VOL_UP   &kp F1  &kp F2  &kp F3        &kp F4         &kp F5         &none
    &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &kp C_VOL_DN   &kp F6  &kp F7  &kp F8        &kp F9         &kp F10        &none
-   &none  &kp ESC   &kp SQT   &kp DQT    &kp GRAVE  &kp TILDE      &kp F11 &kp F12 &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE &none
+   &none  &kp ESC   &kp SQT   &kp DQT    &kp GRAVE  &kp TILDE      &kp F11 &kp F12 &none  &kp LGUI  &kp RGUI &none
                                          &trans  &trans  &trans    &trans  &trans  &trans
                         >;
                 };
