@@ -186,9 +186,9 @@
 
         game_layer {
             bindings = <
-   &none  &kp TAB  &kp Q   &kp W   &kp E   &kp R     &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE
-   &none  &kp M    &kp A   &kp S   &kp D   &kp F     &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE
-   &none  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5    &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE
+   &none  &kp TAB  &kp Q   &kp W   &kp E   &kp R     &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE  &none
+   &none  &kp M    &kp A   &kp S   &kp D   &kp F     &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE  &none
+   &none  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5    &tog BASE  &tog BASE  &tog BASE  &tog BASE  &tog BASE  &none
                    &kp LCTRL &kp LSHIFT &kp SPACE    &tog BASE  &tog BASE  &tog BASE
             >;
         };
