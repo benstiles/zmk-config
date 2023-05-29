@@ -188,7 +188,7 @@
             bindings = <
    &none  &kp TAB  &kp Q   &kp W   &kp E   &kp R     &tog GAME  &tog GAME  &tog GAME  &tog GAME  &tog GAME  &none
    &none  &kp M    &kp A   &kp S   &kp D   &kp F     &tog GAME  &tog GAME  &tog GAME  &tog GAME  &tog GAME  &none
-   &none  &kp N1   &kp N2  &kp N3  &kp N4  &kp N5    &tog GAME  &tog GAME  &tog GAME  &tog GAME  &tog GAME  &none
+   &none  &kp N1   &kp N2  &kp N3  &kp N7  &kp B     &tog GAME  &tog GAME  &tog GAME  &tog GAME  &tog GAME  &none
                    &kp LCTRL &kp LSHIFT &kp SPACE    &tog GAME  &tog GAME  &tog GAME
             >;
         };
