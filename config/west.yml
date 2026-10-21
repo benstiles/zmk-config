@@ -2,31 +2,30 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: geeksville
       url-base: https://github.com/geeksville
     - name: beekeeb
       url-base: https://github.com/beekeeb
-
     - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
 
   projects:
-  # Using v0.3 for Toucan compatibility
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
       revision: v0.3
-      
+
     - name: zmk-fingerpunch-keyboards
       remote: sadekbaroudi
       revision: master
+
     - name: zmk-fingerpunch-vik
       remote: sadekbaroudi
       revision: main
       import: false
+
     - name: zmk-fingerpunch-controllers
       remote: sadekbaroudi
       revision: main
@@ -35,4 +34,3 @@ manifest:
   self:
     path: config
     import: deps.yml
-
