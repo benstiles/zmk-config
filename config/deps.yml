@@ -1,7 +1,5 @@
 manifest:
   remotes:
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: beekeeb
@@ -10,9 +8,11 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
+
     - name: zmk_driver_azoteq
       remote: beekeeb
       revision: main
+
     - name: zmk-input-zoom
       remote: beekeeb
       revision: main
