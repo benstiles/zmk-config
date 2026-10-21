@@ -7,18 +7,6 @@ manifest:
     - name: beekeeb
       url-base: https://github.com/beekeeb
   projects:
-    - name: zmk-fingerpunch-keyboards
-      remote: sadekbaroudi
-      revision: master
-    - name: zmk-fingerpunch-vik
-      remote: sadekbaroudi
-      revision: main
-      import: false
-    - name: zmk-fingerpunch-controllers
-      remote: sadekbaroudi
-      revision: main
-      import: false
-
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
