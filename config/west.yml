@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/geeksville
     - name: beekeeb
       url-base: https://github.com/beekeeb
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
 
   projects:
     - name: zmk
@@ -17,20 +15,17 @@ manifest:
       import: app/west.yml
       revision: v0.3
 
-    - name: zmk-fingerpunch-keyboards
-      remote: sadekbaroudi
-      revision: master
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: v0.3
 
-    - name: zmk-fingerpunch-vik
-      remote: sadekbaroudi
+    - name: zmk_driver_azoteq
+      remote: beekeeb
       revision: main
-      import: false
 
-    - name: zmk-fingerpunch-controllers
-      remote: sadekbaroudi
+    - name: zmk-input-zoom
+      remote: beekeeb
       revision: main
-      import: false
 
   self:
     path: config
-    import: deps.yml

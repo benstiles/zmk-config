@@ -18,33 +18,28 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+
 include:
-# Corne
-  - board: nice_nano_v2
-    shield: corne_left
-  - board: nice_nano_v2
-    shield: corne_right
-
-# Chocofi
-  - board: nice_nano_v2
-    shield: chocofi_left nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: chocofi_right nice_view_adapter nice_view
-
-# Toucan 2
+  # 1. Beekeeb Toucan2 (Split, Seeed XIAO BLE)
   - board: seeeduino_xiao_ble
     shield: toucan_left rgbled_adapter nice_view_gem
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: toucan_right rgbled_adapter
 
-# bykeeb
-  - board: seeeduino_xiao_ble
-    shield: bykeeb_left
-  - board: seeeduino_xiao_ble
-    shield: bykeeb_right
+  # 2. Chocofi (nice!nano v2 + nice!view Nano Displays)
+  - board: nice_nano_v2
+    shield: chocofi_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: chocofi_right nice_view_adapter nice_view
 
-# utils
+  # 3. Corne Split (nice!nano v2, No Displays)
+  - board: nice_nano_v2
+    shield: corne_left
+  - board: nice_nano_v2
+    shield: corne_right
+
+  # 4. Hardware Utilities
   - board: nice_nano_v2
     shield: settings_reset
   - board: seeeduino_xiao_ble
