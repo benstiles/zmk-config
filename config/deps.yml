@@ -10,12 +10,15 @@ manifest:
     - name: zmk-fingerpunch-keyboards
       remote: sadekbaroudi
       revision: master
+      path: fingerpunch/keyboards
     - name: zmk-fingerpunch-vik
       remote: sadekbaroudi
       revision: main
+      path: fingerpunch/vik
     - name: zmk-fingerpunch-controllers
       remote: sadekbaroudi
       revision: main
+      path: fingerpunch/controllers
 
     - name: zmk-rgbled-widget
       remote: caksoylar
