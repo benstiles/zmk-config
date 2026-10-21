@@ -24,17 +24,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
 
-      # SUCCESS: Force-wipes broken circular cache fragments before initializing
       - name: Reset West Cache
         run: rm -rf .west/ modules/ fingerpunch/
 
+      # FIX: Pointed to the correct official ZMK actions repository branch layout
       - name: Initialize West Workspace
-        uses: zmkfirmware/zmk-actions-toolkit/setup-west@main
+        uses: zmkfirmware/zmk-actions/setup-west@main
         with:
           manifest-path: config
 
+      # FIX: Pointed to the correct official ZMK actions repository branch layout
       - name: Run ZMK Build Matrix
-        uses: zmkfirmware/zmk-actions-toolkit/build-matrix@main
+        uses: zmkfirmware/zmk-actions/build-matrix@main
         with:
           build-yaml-path: config/build.yaml
 
