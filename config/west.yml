@@ -17,7 +17,7 @@ manifest:
       import: app/west.yml
       revision: v0.3
 
-    - name: chocofi-shield
+    - name: chocofi
       remote: petejohanson
       revision: main
 
