@@ -15,6 +15,10 @@ manifest:
       import: app/west.yml
       revision: v0.3
 
+    - name: chocofi-shield
+      remote: petejohanson
+      revision: main
+
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
