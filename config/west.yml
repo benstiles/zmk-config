@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/geeksville
     - name: beekeeb
       url-base: https://github.com/beekeeb
+    - name: petejohanson
+      url-base: https://github.com
 
   projects:
     - name: zmk
