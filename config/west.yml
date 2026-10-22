@@ -9,7 +9,7 @@ manifest:
     - name: beekeeb
       url-base: https://github.com/beekeeb
     - name: petejohanson
-      url-base: https://github.com
+      url-base: https://github.com/petejohanson
 
   projects:
     - name: zmk
