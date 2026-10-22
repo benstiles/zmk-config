@@ -29,15 +29,19 @@ include:
 
   # 2. Chocofi (nice!nano v2 + nice!view Nano Displays)
   - board: nice_nano_v2
-    shield: chocofi_left nice_view_adapter nice_view
+    shield: corne_left nice_view_adapter nice_view
+    artifact-name: chocofi_left
   - board: nice_nano_v2
-    shield: chocofi_right nice_view_adapter nice_view
+    shield: corne_right nice_view_adapter nice_view
+    artifact-name: chocofi_right
 
   # 3. Corne Split (nice!nano v2, No Displays)
   - board: nice_nano_v2
     shield: corne_left
+    artifact-name: corne_left
   - board: nice_nano_v2
     shield: corne_right
+    artifact-name: corne_right
 
   # 4. Hardware Utilities
   - board: nice_nano_v2
