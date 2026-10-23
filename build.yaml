@@ -27,7 +27,7 @@ include:
     artifact-name: chocofi_left
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-    cmake-args: -DEXTRA_CONF_FILE=$GITHUB_WORKSPACE/config/chocofi.conf
+    cmake-args: -DEXTRA_CONF_FILE=$GITHUB_WORKSPACE/config/chocofi.conf -DCONFIG_ZMK_USB=n
     artifact-name: chocofi_right
 
   # Corne Split 
