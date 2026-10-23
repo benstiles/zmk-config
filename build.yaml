@@ -20,22 +20,17 @@
 ---
 
 include:
-  # 1. Beekeeb Toucan2 (Split, Seeed XIAO BLE)
-  - board: seeeduino_xiao_ble
-    shield: toucan_left rgbled_adapter nice_view_gem
-    snippet: studio-rpc-usb-uart
-  - board: seeeduino_xiao_ble
-    shield: toucan_right rgbled_adapter
-
-  # 2. Chocofi (nice!nano v2 + nice!view Nano Displays)
+  # Chocofi
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
+    shield: corne_left nice_view_adapter nice_view   
+    cmake-args: -DEXTRA_CONF_FILE=$GITHUB_WORKSPACE/config/chocofi.conf
     artifact-name: chocofi_left
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
+    cmake-args: -DEXTRA_CONF_FILE=$GITHUB_WORKSPACE/config/chocofi.conf
     artifact-name: chocofi_right
 
-  # 3. Corne Split (nice!nano v2, No Displays)
+  # Corne Split 
   - board: nice_nano_v2
     shield: corne_left
     artifact-name: corne_left
@@ -43,8 +38,7 @@ include:
     shield: corne_right
     artifact-name: corne_right
 
-  # 4. Hardware Utilities
+  # Hardware Utilities
   - board: nice_nano_v2
     shield: settings_reset
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+    artifact-name: settings_reset
